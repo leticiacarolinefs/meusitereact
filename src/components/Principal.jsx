@@ -1,17 +1,16 @@
+import { Outlet } from "react-router-dom";
+import Footer from "./Footer";
+import Header from "./Header";
 
-import Home from "../pages/Home"
-import Pedidos from "../pages/Pedidos"
-import Novo from "../pages/Novo"
-import Sobre from "../pages/Sobre"
 
-export default function Principal() {
-return (
-    <main>
-        <Home />
-        <Pedidos />
-        <Novo />
-        <Sobre />
-
-    </main>
-)
+export default function Principal(props) {
+    return (
+        <>
+            <Header onLogout={props.onLogout}/>
+            <main>
+                <Outlet />
+            </main>
+            <Footer />
+        </>
+    )
 }
