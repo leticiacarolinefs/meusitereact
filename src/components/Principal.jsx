@@ -6,7 +6,7 @@ import Header from "./Header";
 export default function Principal(props) {
     return (
         <>
-            <Header onLogout={props.onLogout}/>
+            <Header usuarioID={props.usuarioID} onLogout={props.onLogout}/>
             <main>
                 <Outlet />
             </main>
