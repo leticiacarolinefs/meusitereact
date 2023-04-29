@@ -7,6 +7,7 @@ import Sobre from './pages/Sobre'
 import Erro404 from './pages/Erro404'
 import Login from './pages/Login'
 import Principal from './components/Principal';
+import './App.css'
 
 
 
